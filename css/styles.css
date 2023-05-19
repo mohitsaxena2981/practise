@@ -1,0 +1,97 @@
+body{
+    background: linear-gradient(to right, blue, aqua);
+}
+
+.heading{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.col-md-6 div{
+    margin-bottom: 5px;
+}
+
+.partition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.name{
+    margin-top: 150px; 
+    margin-left: 10px;
+}
+
+.row{
+    margin-bottom: 5px;
+}
+
+.name{
+    margin-top: 240px;
+}
+
+
+.card{
+    background-color: white ;
+    border-bottom-left-radius: 15% 40%;
+    border-top-left-radius: 15% 40%;
+    padding-left: 20px;
+    margin: 20px;
+}
+
+.error{
+    text-align: center;
+    color: red;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 10px;
+}
+
+
+
+.login-button{
+    background-color: white;
+    color: black ;
+}
+
+.login-button:hover{
+    background-color: green;
+}
+
+button .submit{
+    background-color: blue ;
+}
+
+#submit:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+
+
+@media (max-width:768px){
+    .card{
+        border-radius: 2%;
+    }
+
+}
+
+@media (max-width: 700px){
+
+}
+
+@media (max-width: 560px){
+    .heading{
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:330px){
+    .heading{
+        margin-top: 100px;
+    }
+}
