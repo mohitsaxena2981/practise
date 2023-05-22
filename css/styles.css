@@ -11,6 +11,13 @@ body{
 
 }
 
+
+/* extra */
+
+.col-md-3{
+    margin-top: 180px;
+}
+
 .col-md-6 div{
     margin-bottom: 5px;
 }
@@ -30,8 +37,26 @@ body{
     margin-bottom: 5px;
 }
 
+
+
 .name{
     margin-top: 240px;
+}
+
+.table{
+    /* margin-left: 50px; */
+    /* margin-right: 250px; */
+    margin: auto;
+    /* margin-left: 10px; */
+    width: 30% !important;  
+    padding-bottom: 10px;
+    font-size: 15px;
+
+
+}
+
+.table-bordered{
+    border-color: black;
 }
 
 
@@ -41,6 +66,8 @@ body{
     border-top-left-radius: 15% 40%;
     padding-left: 20px;
     margin: 20px;
+    /* extra */
+    margin-top: 200px;
 }
 
 .error{
@@ -49,7 +76,10 @@ body{
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 10px;
+    visibility: hidden;
 }
+
+
 
 
 
@@ -71,27 +101,77 @@ button .submit{
     transition: 0.5s;
 }
 
-
+@media (max-width:1000px){
+    /* extra */
+    .table{
+        font-size: 10px;
+    }
+}
 
 @media (max-width:768px){
     .card{
         border-radius: 2%;
+        margin-top: 50px;
+    }
+    .table{
+        margin-left: 24%;
+    }
+    .col-md-3{
+        margin-top: 440px;
     }
 
 }
 
 @media (max-width: 700px){
-
+    .table{
+        margin-left: 22%;
+    }
+    .card{
+        margin-top: 50px;
+    }
+    .name{
+        margin-top: 80px;
+    }
+    .col-md-3{
+        margin-top: 400px;
+    }
 }
 
+@media (max-width: 640px){
+    .table{
+        margin-left: 20%;
+    }
+}
 @media (max-width: 560px){
     .heading{
         margin-top: 80px;
     }
+    .table{
+        margin-left: 18%;
+    }
 }
 
+@media (max-width: 415px)
+{
+    .table{
+        margin-left: 11%;
+    }
+    #female{
+        margin-left: 32px;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .table{
+        margin-left: 10%;
+    }
+}
 @media (max-width:330px){
     .heading{
         margin-top: 100px;
+    }
+    #female{
+        margin-left: 0px;
     }
 }
