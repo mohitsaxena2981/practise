@@ -35,61 +35,62 @@
                   <div class="col-md-6">
                     <div>
                       <label>First Name</label>
-                      <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name *" onblur="Validation()">
-                      <p class="error" id="firstname-error"></p>
+                      <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name *" >
+                      <p class="error" id="firstname-error">Please enter a valid name</p>
                     </div>
                     <div>
                       <label>Last Name</label>
-                      <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name *" onblur="Validation()">
-                      <p class="error" id="lastname-error"></p>
+                      <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name *" >
+                      <p class="error" id="lastname-error">Please enter a valid name</p>
                     </div>
                     <div>
                       <label>Password</label>
-                      <input type="password" name="password" class="form-control" id="password" required
-                        placeholder="Password *">
+                      <input type="password" name="password" class="form-control" id="password" placeholder="Password *">
+                        <p class="error" id="password-error">Password length should be greater than 8</p>
                     </div>
                     <div>
                       <label>Confirm Password</label>
-                      <input type="password" name="password" class="form-control" id="confirmPassword" required
-                        placeholder="Confirm Password *">
+                      <input type="password" name="password" class="form-control" id="confirmPassword" placeholder="Confirm Password *" >
+                      <p class="error" id="match-error">Password does not match</p>
                     </div>
                     <div id="gender">
-                      <label>Gender</label>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" required />
-                        <label class="form-check-label" for="male">Male</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="gender" id="female" value="female"
-                          required />
-                        <label class="form-check-label" for="male">Female</label>
-                      </div>
+                        <label>Gender</label>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                            <label class="form-check-label" for="male">Female</label>
+                          </div>
+                          <p class="error" id="gender-error">Please select your gender</p>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div>
                       <label>Email</label>
-                      <input type="text" name="email" class="form-control" id="email" placeholder="Your Email *" onblur="Validation()">
-                      <p id="email-error" class="error"></p>
+                      <input type="text" name="email" class="form-control" id="email" placeholder="Your Email *" >
+                      <p id="email-error" class="error">Please enter a valid email</p>
                     </div>
                     <div>
                       <label>Phone Number</label>
-                      <input type="tel" name="phoneNumber" class="form-control" id="inputPhone" placeholder="Your Phone *" onblur="Validation()">
-                      <p id="phone-error" class="error"></p>
+                      <input type="text" name="phoneNumber" class="form-control" id="inputPhone" placeholder="Your Phone *" >
+                      <p id="phone-error" class="error">Please enter a valid Phone</p>
                     </div>
                     <div>
                       <label>Security Question</label>
-                      <select class="form-control" name="question" id="question" required>
+                      <select class="form-control" name="question" id="question">
                         <option value="" disabled selected hidden>Select a Security Question</option>
                         <option value="Favourite Film">Your Favourite film ?</option>
                         <option value="Favourite Place">Your Favourite Place ?</option>
                         <option value="Favourite Food">Your Favourite Food ? </option>
                       </select>
+                      <p class="error" id="question-error">Please select a security question</p>
                     </div>
                     <div>
                       <label>Answer</label>
-                      <input type="text" name="inputAnswer" class="form-control" id="inputAnswer" required
-                        placeholder="Enter your Answer *">
+                      <input type="text" name="inputAnswer" class="form-control" id="inputAnswer" placeholder="Enter your Answer *">
+                        <p class="error" id="answer-error">Please give your answer</p>
                     </div>
                   </div>
                 </div>
@@ -101,8 +102,98 @@
             </div>
           </div>
         </div>
+        <div class="table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Phone Number</th>
+                  <!-- <th scope="col">Gender</th>
+                  <th scope="col">Password</th>
+                  <th scope="col">Secutity Question</th>
+                  <th scope="col">Answer</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="td1"></td>
+                  <td id="td2"></td>
+                  <td id="td3"></td>
+                  <td id="td4"></td>
+                  <!-- <td id="td5"></td>
+                  <td id="td6"></td>
+                  <td id="td7"></td>
+                  <td id="td8"></td> -->
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <!-- <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Phone Number</th>
+                  <th scope="col">Email</th> -->
+                  <th scope="col">Gender</th>
+                  <th scope="col">Password</th>
+                  <th scope="col">Secutity Question</th>
+                  <th scope="col">Answer</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <td id="td1"></td>
+                  <td id="td2"></td>
+                  <td id="td3"></td>
+                  <td id="td4"></td> -->
+                  <td id="td5"></td>
+                  <td id="td6"></td>
+                  <td id="td7"></td>
+                  <td id="td8"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
-    </div>
+      <!-- <div class="table">
+        <table class="table">
+          <tr>
+            <th>Front Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+          <tr>
+            <th>Name:</th>
+            <td>Sivaraman</td>
+          </tr>
+
+        </table>
+      </div> -->
     <script src="./js/script.js"></script>
   </body>
 
